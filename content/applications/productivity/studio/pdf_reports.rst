@@ -2,179 +2,257 @@
 PDF reports
 ===========
 
-With Studio, you can edit existing PDF reports (e.g., orders and quotations) or create new ones.
-
-.. important::
-   To edit a standard PDF report, it is strongly recommended to **duplicate** it and make changes to
-   the duplicated version, as changes made to standard reports will be overwritten after an Odoo
-   upgrade. To duplicate a report, go to :menuselection:`Studio --> Reports`. Hover the mouse
-   pointer on the top right corner of the report, click the vertical ellipsis icon (:guilabel:`⋮`),
-   and then select :guilabel:`Duplicate`.
-
-   .. image:: pdf_reports/duplicate-report.png
-      :alt: Duplicating a PDF report
+With Studio, you can :ref:`edit existing PDF reports <studio/pdf-reports/edit>` (e.g., invoices,
+quotations, etc.) or :ref:`create new ones <studio/pdf-reports/edit>`.
 
 .. _studio/pdf-reports/default-layout:
 
 Default layout
 ==============
 
-The default layout of reports is managed outside Studio. Go to :menuselection:`Settings -->
-Companies: Document Layout --> Configure Document Layout`. Layout settings apply to all reports but
-only to the current company.
+The default layout of reports is managed outside Studio. Go to :menuselection:`Settings`, then, in
+the :guilabel:`Companies` section, click :guilabel:`Configure Document Layout`. Layout settings are
+company-specific but apply to all reports.
 
 .. tip::
-   Use :guilabel:`Download PDF Preview` to view how the different settings affect the layout of a
-   sample invoice.
+   Click :guilabel:`Download PDF Preview` to download a sample invoice PDF and see how the different
+   settings affect the report layout.
 
 .. _studio/pdf-reports/default-layout/layout:
 
-Layout
-------
+The following settings are available:
 
-Four layouts are available.
+- :guilabel:`Layout`: Four layouts are available:
 
-.. tabs::
+  .. tabs::
 
-   .. tab:: Light
+     .. tab:: Light
 
-      .. image:: pdf_reports/light.png
-         :alt: Light report layout sample
+        .. image:: pdf_reports/light.png
+           :alt: Light report layout sample
 
-   .. tab:: Boxed
+     .. tab:: Boxed
 
-      .. image:: pdf_reports/boxed.png
-         :alt: Boxed report layout sample
+        .. image:: pdf_reports/boxed.png
+           :alt: Boxed report layout sample
 
-   .. tab:: Bold
+     .. tab:: Bold
 
-      .. image:: pdf_reports/bold.png
-         :alt: Bold report layout sample
+        .. image:: pdf_reports/bold.png
+           :alt: Bold report layout sample
 
-   .. tab:: Striped
+     .. tab:: Striped
 
-      .. image:: pdf_reports/striped.png
-         :alt: Striped report layout sample
+        .. image:: pdf_reports/striped.png
+           :alt: Striped report layout sample
 
 .. _studio/pdf-reports/default-layout/font:
 
-Font
-----
-
-Seven fonts are available. Click on the links below to preview them on `Google Fonts
-<https://fonts.google.com/>`_.
-
-- `Lato <https://fonts.google.com/specimen/Lato#type-tester>`_
-- `Roboto <https://fonts.google.com/specimen/Roboto#type-tester>`_
-- `Open Sans <https://fonts.google.com/specimen/Open+Sans#type-tester>`_
-- `Montserrat <https://fonts.google.com/specimen/Montserrat#type-tester>`_
-- `Oswald <https://fonts.google.com/specimen/Oswald#type-tester>`_
-- `Raleway <https://fonts.google.com/specimen/Raleway#type-tester>`_
-- `Tajawal <https://fonts.google.com/specimen/Tajawal#type-tester>`_
-
-  .. note::
-     :guilabel:`Tajawal` supports both Arabic and Latin scripts.
+- :guilabel:`Font`: Seven fonts are available: Lato, Roboto, Open Sans, Montserrat, Oswald, Raleway,
+  Tajawal (which supports both Arabic and Latin scripts). Go to `Google Fonts <https://fonts.google.com/>`_
+  to preview them.
 
 .. _studio/pdf-reports/default-layout/logo:
 
-Company logo
-------------
-
-Upload an image file to add a :guilabel:`Company Logo`.
-
-.. note::
-   This adds the logo to the company’s record on the *Company* model, which you can access by going
-   to :menuselection:`General Settings --> Companies --> Update Info`.
+- :guilabel:`Company logo`: Click the :guilabel:`Edit` button to upload or change the logo. This
+  adds the logo to the company’s record on the *Company* model, which you can access by going to
+  :menuselection:`Settings`, then clicking :guilabel:`Update Info` in the :guilabel:`Companies`
+  section.
 
 .. _studio/pdf-reports/default-layout/colors:
 
-Colors
-------
-
-Change the primary and secondary colors used throughout reports to highlight important elements.
-The default colors are automatically generated based on the colors of the logo.
+- :guilabel:`Colors`: Change the primary and secondary colors used throughout reports to highlight
+  important elements. The default colors are automatically generated based on the colors of the logo.
 
 .. _studio/pdf-reports/default-layout/background:
 
-Layout background
------------------
+- :guilabel:`Layout background`: The following backgrounds are available:
 
-Change the :guilabel:`Layout Background` of the report:
-
-- :guilabel:`Blank`: nothing is displayed.
-- :guilabel:`Geometric`: an image featuring geometric shapes is displayed in the background.
-- :guilabel:`Custom`: use a custom background image by uploading one.
+  - :guilabel:`Blank`: nothing is displayed.
+  - :guilabel:`Geometric`: an image featuring geometric shapes is displayed in the background.
+  - :guilabel:`Custom`: use a custom background image by uploading one.
 
 .. _studio/pdf-reports/default-layout/tagline:
 
-Company tagline
----------------
-
-The :guilabel:`Company Tagline` is displayed on the header of :ref:`External reports
-<studio/pdf-reports/header-footer/external>`. You can add multiple lines of text.
+- :guilabel:`Company tagline`: This is displayed in the header of :ref:`External reports
+  <studio/pdf-reports/header-footer/external>`. You can add multiple lines of text.
 
 .. _studio/pdf-reports/default-layout/details:
 
-Company details
----------------
-
-The :guilabel:`Company Details` are displayed on the header of :ref:`External reports
-<studio/pdf-reports/header-footer/external>`. You can add multiple lines of text.
+- :guilabel:`Company details`: These are displayed in the header of :ref:`External reports
+  <studio/pdf-reports/header-footer/external>`. You can add multiple lines of text.
 
 .. _studio/pdf-reports/default-layout/footer:
 
-Footer
-------
-
-Use the :guilabel:`Footer` field to put any text in the :ref:`External reports'
-<studio/pdf-reports/header-footer/external>` footers. You can add multiple lines of text.
+- :guilabel:`Footer`: This text is used in the :ref:`External reports'
+  <studio/pdf-reports/header-footer/external>` footers. You can add multiple lines of text. You can
+  also edit the footer using the :ref:`report editor <studio/pdf-reports/edit>`.
 
 .. _studio/pdf-reports/default-layout/paper:
 
-Paper format
-------------
+- :guilabel:`Paper format`: to define the default paper size of reports. You can either select
+  :guilabel:`A4` (21 cm x 29.7 cm), :guilabel:`US Letter` (21.59 cm x 27.54 cm), or
+  :guilabel:`QR codes page`. This can also be defined for individual reports in the
+  :guilabel:`Paper format` field in :ref:`Studio <studio/pdf-reports/create>`.
 
-Use the :guilabel:`Paper format` field to change the paper size of reports. You can either select
-:guilabel:`A4` (21 cm x 29.7 cm) or :guilabel:`US Letter` (21.59 cm x 27.54 cm).
+.. _studio/pdf-reports/edit:
+
+Editing PDF reports
+===================
+
+To access the reports available for a model, access the model (e.g. sales orders), click the
+**Toggle Studio** button, then click :guilabel:`Reports`. Select an existing report to open it, or
+:ref:`create a new one <studio/pdf-reports/create>`.
+
+.. important::
+   To edit a standard PDF report, it is strongly recommended to **duplicate** it and make changes to
+   the duplicated version, as changes made to standard reports are overwritten after an Odoo
+   upgrade. To duplicate a report, hover the mouse pointer on the top right corner of the report,
+   click the vertical ellipsis icon (:guilabel:`⋮`), and then select :guilabel:`Duplicate`.
+
+   .. image:: pdf_reports/duplicate-report.png
+      :alt: Duplicating a PDF report
 
 .. tip::
-   You can change the :guilabel:`Paper format` on individual reports. Open the app containing the
-   report, then go to :menuselection:`Studio --> Reports --> Select or Create a report --> Report
-   --> Select a Paper format`.
+   Alternatively, you can also open Studio, then click :guilabel:`Reports` and remove the contents
+   of the search field to display all reports, or search for a specific model (e.g. `sale.order`,
+   `mrp.production`, etc.) or report.
 
-.. image:: pdf_reports/default-layout.png
-   :alt: Configuration pop-up window for the default layout of PDF reports
+Options
+-------
 
-.. _studio/pdf-reports/header-footer:
+The options in the left part of the screen allow you to:
 
-Header and footer
-=================
+- change the :guilabel:`Report name`. The new name is applied everywhere (in Studio, under
+  the :guilabel:`Print` button, and in the PDF file name).
+- modify the :guilabel:`Report format`. If no value is selected, the default format defined in the
+  :ref:`default layout <studio/pdf-reports/default-layout/paper>` is used.
+- :guilabel:`Add in print`: to add the report in the :guilabel:`Print` menu available from the
+  record.
+- :guilabel:`Limit visibility to groups`: to limit the availability of the PDF report to specific
+  :doc:`user groups <../../general/users/access_rights>`.
+- :guilabel:`Edit sources`: to modify the report directly in the :ref:`XML file
+  <studio/pdf-reports/XML-editing>`;
+- :guilabel:`Reset report`: to discard all changes made on the report and reset it to its standard
+  state;
+- generate and download a :guilabel:`Report preview`.
 
-When creating a new report in Studio, you must choose between one of three styles of reports first.
-This is solely used to determine what is displayed on the header and footer. To do so, go to the app
-on which you want to add a new report, click the **Toggle Studio** button, then click
-:guilabel:`Reports`. Click :guilabel:`New` and select
-:ref:`studio/pdf-reports/header-footer/external`, :ref:`studio/pdf-reports/header-footer/internal`,
-or :ref:`studio/pdf-reports/header-footer/blank`.
+Report editor
+-------------
+
+The report editor allows you to modify the formatting and contents of the report.
+
+The dashed rectangles represent conditional blocks (if/else statements).  Click on the block to view
+the conditions and select a value to preview its corresponding output and edit it if necessary.
+
+.. image:: pdf_reports/conditional-block-1.png
+   :alt: Conditional block
+
+The blue text represents default values which are replaced by field values when the report is
+generated.
+
+Using the report editor, you can:
+
+- select the text and format it using the :ref:`knowledge/text-editor`;
+
+  .. image:: pdf_reports/text-editor.png
+     :alt: Format text using the text editor
+
+- modify static text (directly in the report editor);
+- remove or :ref:`add content <studio/pdf-reports/add-content>`.
+
+.. important::
+   Editing the header and footer of a report impacts all standard and custom reports.
+
+.. tip::
+   - You can :guilabel:`Undo` or :guilabel:`Redo` changes using the related buttons or the shortcuts
+     `CTRL Z` and `CTRL Y`.
+   - Changes are saved automatically when you leave the report, or manually using the
+     :guilabel:`Save` button.
+
+.. _studio/pdf-reports/add-content:
+
+Adding content
+~~~~~~~~~~~~~~
+
+You can add contents to the report using the :ref:`knowledge/powerbox`. Type `/` to open the
+**powerbox**, then type the command's name or select it from the list.
+
+The `Field` command
+*******************
+
+To add a field into the report, type `/`, and select the `Field` command. In the list that opens,
+select or search for the field; click the right arrow next to the field name to access the list of
+related fields if needed.
+
+Then, specify the default value and press `Enter`.
+
+Other commands here?
+********************
+
+.. _studio/pdf-reports/XML-editing:
+
+XML editing: examples
+~~~~~~~~~~~~~~~~~~~~~
+
+.. warning::
+   Modifying the XML directly may result in report issues during upgrades. If this happens, simply
+   copy your changes from the duplicate database created as part of the upgrade process into your
+   upgraded database.
+
+To edit the report's XML, click :guilabel:`Edit sources` in the left pane.
+
+XXX change
+
+- Can select view
+- Can search for or select another record or go to the next/previous record to preview
+- Can close editor using button
+
+
+Add a new column in a SO line table
+***********************************
+
+Adapt the image size
+********************
+
+Modify or add conditions
+************************
+
+Add a table
+***********
+
+
+.. _studio/pdf-reports/create:
+
+Creating new PDF reports
+========================
+
+To create a new report for a model, access the model, click the **Toggle Studio** button, then click
+:guilabel:`Reports`. Click :guilabel:`New` and, in the popup window that opens, select the type of
+report: :ref:`studio/pdf-reports/header-footer/external`, :ref:`studio/pdf-reports/header-footer/internal`,
+or :ref:`studio/pdf-reports/header-footer/blank`. This is solely used to determine what is displayed
+in the header and footer.
 
 .. _studio/pdf-reports/header-footer/external:
 
 External
 --------
 
-The header displays the company :ref:`studio/pdf-reports/default-layout/logo` and several values
-set on the *Company* model: the :guilabel:`Company Name`, :guilabel:`Phone`, :guilabel:`Email`, and
+The header displays the :ref:`logo <studio/pdf-reports/default-layout/logo>` and several values set on the
+*Company* model: the :guilabel:`Company Name`, :guilabel:`Phone`, :guilabel:`Email`, and
 :guilabel:`Website`.
 
 .. tip::
-   To change a company's information, go to :menuselection:`Settings --> Companies --> Update Info`.
+   To change a company's information, go to :menuselection:`Settings`, then, in the
+   :guilabel:`Companies` section, click :guilabel:`Update Info`.
 
 .. image:: pdf_reports/external-header.png
    :alt: Example of an External header
 
-The footer displays the values set on the :ref:`studio/pdf-reports/default-layout/footer`,
-:ref:`studio/pdf-reports/default-layout/details`, and
-:ref:`studio/pdf-reports/default-layout/tagline` fields, as well as the page number.
+The footer displays the values set on the :ref:`Footer <studio/pdf-reports/default-layout/footer>`,
+:ref:`Company details <studio/pdf-reports/default-layout/details>`, and
+:ref:`Company tagline <studio/pdf-reports/default-layout/tagline>` fields, as well as the page
+number.
 
 .. image:: pdf_reports/external-footer.png
    :alt: Example of an External footer
@@ -185,7 +263,6 @@ Internal
 --------
 
 The header displays the user's current date and time, :guilabel:`Company Name`, and page number.
-
 There is no footer.
 
 .. _studio/pdf-reports/header-footer/blank:
@@ -193,150 +270,5 @@ There is no footer.
 Blank
 -----
 
-There is neither a header nor a footer.
-
-.. _studio/pdf-reports/elements:
-
-Add tab
-=======
-
-After opening an existing report or creating a new one, go to the :guilabel:`Add` tab to add or edit
-elements. The elements are organized into four categories: :ref:`studio/pdf-reports/elements/block`,
-:ref:`studio/pdf-reports/elements/inline`, :ref:`studio/pdf-reports/elements/table`, and
-:ref:`studio/pdf-reports/elements/column`.
-
-.. _studio/pdf-reports/elements/block:
-
-Block
------
-
-Block elements start on a new line and occupy the full width of the page.
-
-.. tip::
-   You can set an element's width by selecting it and going to the :guilabel:`Options` tab.
-
-- :guilabel:`Text`: add any text using small font size by default.
-
-- :guilabel:`Title Block`: add any text using larger font size by default.
-
-- :guilabel:`Image`: add an image. You can either upload one from your device, add one from
-  an URL, or select one already existing on your database.
-
-- :guilabel:`Field`: dynamically add a field's value.
-
-- :guilabel:`Field & Label`: to dynamically add a field's value and label.
-
-- :guilabel:`Address Block`: to dynamically add the values, if any, of a contact's (`res.partner`
-  model): *Name*, *Address*, *Phone*, *Mobile*, and *Email*.
-
-  .. image:: pdf_reports/address-block.png
-     :alt: Example of an Address Block
-
-.. _studio/pdf-reports/elements/inline:
-
-Inline
-------
-
-Inline elements are used around other elements. They do not start on a new line and the width adapts
-to length of the content.
-
-.. tip::
-   You can set an element's width and margins by selecting it and going to the :guilabel:`Options`
-   tab.
-
-- :guilabel:`Text`: add any text using small font size by default.
-
-- :guilabel:`Field`: dynamically add a field's value.
-
-.. _studio/pdf-reports/elements/table:
-
-Table
------
-
-Table elements are used together to create a data table.
-
-- :guilabel:`Data table`: create a table and dynamically add a first column displaying the *Name*
-  values of a :ref:`Many2Many <studio/fields/relational-fields/many2many>` or :ref:`One2Many
-  <studio/fields/relational-fields/one2many>` field on your model.
-
-  .. image:: pdf_reports/data-table.png
-     :alt: Example of a Data table
-
-- :guilabel:`Field Column`: add a new column to the table displaying the values of a :ref:`Related
-  Field <studio/fields/relational-fields/related-field>` to the one used to create the
-  :guilabel:`Data table`.
-
-- :guilabel:`Text in Cell`: add any text within an existing table cell.
-
-- :guilabel:`Field in Cell`: add, within an existing table cell, the values of a :ref:`Related
-  Field <studio/fields/relational-fields/related-field>` to the one used to create the
-  :guilabel:`Data table`.
-
-- :guilabel:`Subtotal & Total`: add an existing :guilabel:`Total` field's value. If a
-  :guilabel:`Taxes` field exists, the untaxed and taxes amounts are added before the total amount.
-
-.. _studio/pdf-reports/elements/column:
-
-Column
-------
-
-Columns are used to add multiple :ref:`blocks <studio/pdf-reports/elements/block>` elements on the
-same line.
-
-- :guilabel:`Two Columns`: add any text in two different columns.
-
-- :guilabel:`Three Columns`: add any text in three different columns.
-
-Report tab
-==========
-
-Several configuration options are available under the :guilabel:`Report` tab.
-
-- :guilabel:`Name`: change the report name. The new name is applied everywhere (in Studio, under
-  the :guilabel:`Print` button, and for the PDF file name).
-
-- :guilabel:`Paper format`: change the paper size of the report.
-
-- :guilabel:`Add in print`: add the report under the :guilabel:`🖶 Print` button available on the
-  record.
-
-- :guilabel:`Limit visibility to groups`: limit the availability of the PDF report to specific
-  :doc:`user groups <../../general/users/access_rights>`.
-
-Options tab
-===========
-
-Select an element on the report to access the element's options and edit it.
-
-.. image:: pdf_reports/text-options-tab.png
-   :alt: The Options tab for a text element
-
-.. note::
-   You can select and edit multiple elements at the same time by clicking on the different sections
-   or divisions (e.g., `div`, `table`, etc.).
-
-Below are presented some of the most common options:
-
-- :guilabel:`Margins`: add spacing at the :guilabel:`top`, :guilabel:`right`, :guilabel:`bottom`,
-  and :guilabel:`left` of the element.
-
-- :guilabel:`Width`: set the element's maximum width.
-
-- :guilabel:`Visible if`: set under which condition(s) the element should be displayed.
-
-- :guilabel:`Visible for`: set for which :doc:`users groups <../../general/users/access_rights>`
-  the element should be displayed.
-
-- :guilabel:`Remove from View`: remove the element from the report's view.
-
-- :guilabel:`Text decoration`: bold, italicize, and underline the font.
-
-- :guilabel:`Alignment`: align the element to the left, center, or right of the report.
-
-- :guilabel:`Font style`: use one of the default font styles.
-
-- :guilabel:`Colors`: change the font's color and the background color.
-
-.. note::
-   You may need to select a section or division above the element you want to edit to see some of
-   the options described above.
+There is neither a header nor a footer. Click in the upper left corner of the page to edit the
+report.
