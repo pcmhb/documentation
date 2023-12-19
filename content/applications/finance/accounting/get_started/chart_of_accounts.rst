@@ -92,12 +92,10 @@ corresponding type from the following list:
 |Other          | Other        | Off-Balance Sheet       |
 +---------------+--------------+-------------------------+
 
-Assets, deferred expenses, and deferred revenues automation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Assets
+~~~~~~
 
-Some **account types** can **automate** the creation of :ref:`assets <assets-automation>` entries,
-:ref:`deferred expenses <deferred-expenses-automation>` entries, and
-:ref:`deferred revenues <deferred-revenues-automation>` entries. To **automate** entries, click
+Some **account types** can **automate** the creation of :ref:`assets <assets-automation>` entries. To **automate** entries, click
 :guilabel:`Setup` on an account line and go to the :guilabel:`Automation` tab.
 
 You have three choices for the :guilabel:`Automation` tab:
