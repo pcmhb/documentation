@@ -214,7 +214,7 @@ display the information in a more organized fashion.
 **To add a custom filter:**
 
 1. On the :guilabel:`Pipeline Analysis` page, click the :guilabel:`down arrow` icon next to the
-   search bar.
+   :guilabel:`Search...` bar.
 2. In the drop-down menu, click :guilabel:`Add Custom Filter`.
 3. The :guilabel:`Add Custom Filter` pop-up window appears with a default rule (:guilabel:`Country
    is in _____`) comprised of three unique fields. These fields can be edited to make a custom rule,
@@ -458,9 +458,11 @@ below.
 Win/Loss reports
 ----------------
 
-Win/Loss is a metric of the leads/opportunities marked "Won" or "Lost" over a period of time. By
-calculating "opportunities won" over "opportunities lost," teams can identify what methods and/or
-individuals are effectively converting leads into sales.
+Win/Loss is a calculation of active or previously active leads in a pipeline that were either marked
+as **Won** or **Lost** over a specific period of time. By calculating opportunities won over
+opportunities lost, teams can identify clarify key performance indicators (KPIs) that are converting
+leads into sales, such as specific teams or team members, certain marketing mediums or campaigns,
+and so on.
 
 .. math::
    \begin{equation}
